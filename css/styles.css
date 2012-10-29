@@ -1,0 +1,67 @@
+body {
+	background-color: black;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+}
+
+#Centerer {
+	margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+	height: 100%;
+	background-color: white;
+	padding-top: 10;
+	l
+}
+
+#MenuContainer {
+	float:left;
+	top : 60px;
+	width: 200px;
+	height : 100%;
+	background-color: white;
+	padding: 10px;
+	position : fixed;
+}
+
+#MenuHeader {
+	background-color=green;
+	height=20px;
+	text-align: center;
+}
+#Content {
+	background-color: white;
+	height: 100%;
+	width: 760px;
+	float: right;
+	padding : 10px;
+	padding-top :80px;
+	top: 120px;
+	overflow: auto;
+}
+
+#Header {
+	background-color: white;
+	margin-left:auto;
+	margin-right:auto;
+	width: 950px;
+	height: 70px;
+	position: fixed;
+	top: 0px;
+	text-align: left;
+	font-size: 32;
+}
+
+
+
+html {
+	height: 100%;
+}
+
+.figure {
+	margin: 20px;
+	text-align: center;
+}

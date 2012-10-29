@@ -1,0 +1,13 @@
+<h1>Customizing Your Control Scheme (Version 1.1+)</h1>
+<br>
+<p>In the 1.1 update there is a new input system which allows you to easily configure your own control schemes without editing the core FPS Scripts. This is especially important now that the system supports mobile platforms. </p>
+<center><img border="0" src="http://www.bananacafedc.com/images/banana.gif" alt="Banana" width="200" height="228" /></center>
+<p>This is done using the new InputDB system, in which the InputManager object has objects for each input. Each input object has a script called InputItem which holds the information about that input, and which you can manipulate through your own scripts. The InputItem components are by default found under the InputManager object under Manager.</p>
+<p>The default scripts ('Key' and 'Axis') simply implement the standard keyboard controls, but your own scripts can do anything you want. The key is that the InputItem script has four values, each corresponding to a standard Input variable or state used by the system :</p>
+<ul>
+<li>up : GetButtonUp (true for the first frame a key is released)</li>
+<li>down : GetButtonDown (true for the first frame a key is pressed)</li>
+<li>got : GetButton (true as long as the key is pressed)</li>
+<li>axis : corresponds to axis values (floats)</li>
+</ul>
+<p>In the 1.1 update there is a new input system which allows you to easily configure your own control schemes without editing the core FPS Scripts. This is especially important now that the system supports mobile platforms. </p>

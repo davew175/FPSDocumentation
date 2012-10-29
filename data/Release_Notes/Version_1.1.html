@@ -1,0 +1,55 @@
+<h2>TestVersion 1.1 - Submitted May 7, 2012</h2>
+<p>
+This release contains several new features, including mobile compatibility. If you are upgrading from an older version of the package, see 'Importing 1.1 into an existing 1.02 Project' and back up your project before importing.
+</p>
+
+<h3>New Input System</h3>
+InputDB designed to allow open-ended customization, especially for mobile devices. This new system enables the mobile controls and can be used to customize input without changing the core package code. See Customizing your Control Scheme for details.
+
+<h3>Mobile Compatibility</h3>
+iOS tested. Currently builds when project is set to Android, but hasn't actually been built to a device. If you are working with Android and encounter any issues please contact us at info@dastardlybanana.com and we'll help you work on it.
+
+<h3>Sample iOS controls</h3>
+MobileScene has example controls. Could work on any device with touch and accelerometer, but buttons currently placed for iPad. Includes sample controls for touch buttons, tilt, and drag.
+
+<h3>New Weapon Sway</h3>
+Completely new system. Better looking, sine-based motion and no longer causes errors.
+New static functions and variables for player control
+This allows users better control of the player's capabilities at any point, allowing for more customization without modifying the core package code.
+
+<ul>
+	<li>PlayerWeapons.canMove</li>
+	<li>PlayerWeapons.canSprint</li>
+	<li>PlayerWeapons.canSprint</li>
+	<li>PlayerWeapons.canLook</li>
+	<li>PlayerWeapons.canFire</li>
+	<li>PlayerWeapons.canAim</li>
+	<li>PlayerWeapons.canCrouch</li>
+	<li>PlayerWeapons.doesIdle</li>
+	<li>PlayerWeapons.CanSwitchWeapons</li>
+	<li>PlayerWeapons.HideWeapon()</li>
+	<li>PlayerWeapons.HideWeaponInstant()</li>
+	<li>PlayerWeapons.ShowWeapon()</li>
+</ul>
+
+<h3>Lean</h3>
+New component allows player to lean
+
+<h3>Interaction Capabilities</h3>
+Hitting 'Interact' button calls Interact() function on target
+
+<h3>Sample Pickups</h3>
+Health and ammo boxes, using new Interaction capabilities
+
+<h3>Sample Enemies</h3>
+Melee and Ranged enemies. Ranged enemy uses Fire.js to shoot at player.
+
+<h3>New Sample Weapon</h3>
+Plasma Beam - this charge weapon is a beam which latches onto targets
+
+
+<h3>Javascript MouseLookDB and GunLook</h3>
+<p>Replaced MouseLookDB with javascript MouseLookDBJS to prevent compilation order problems. Users upgrading to 1.1 must replace instances of MouseLookDB with MouseLookDBJS. This is done by dragging the new script onto the components holding the old scripts on Player and WeaponCamera. If you haven't modified the Player prefab in your scene this may happen automatically when you import the package.</p>
+
+<p>Replaced GunLook.cs with GunLook.js. Users upgrading to 1.1 must replace GunLook.cs with GunLook.js, by dragging GunLook.js onto the GunLook component on the GunMotion object on their player.
+</p>
